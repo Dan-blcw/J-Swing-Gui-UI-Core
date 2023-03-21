@@ -28,9 +28,10 @@
 
 ## Function
 
-- Add user, edit, delete, deselect, search
+- Add user, edit, update, save, delete, deselect, search
 
-- Open file, write data, save data
+- Open file, write data, save data to the file
 
+- Print out the notification windows
 
 #### Okay,that is all and i'm Dan
