@@ -7,7 +7,7 @@
 ## Prerequisites
 - JDK 19
 - able to type pure code with Java Swing GUI ()
--- Note : The code below is purely hand-typed, so it will be a lot of lines and will be very long
+### NOTE : The code below is purely hand-typed, so it will be a lot of lines and will be very long
 ## Summary chart
 <!--  
                                              - src
