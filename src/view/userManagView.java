@@ -1,5 +1,4 @@
 package view;
-
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -50,7 +49,7 @@ import java.awt.Color;
 
 public class userManagView extends JFrame {
 	private static final long serialVersionUID = 1L;
-	private JPanel contentPane;
+	private Menu contentPane;
 	public userManagModel model;
 	public JTextField textField_UserID_Search;
 	public JTable table;
@@ -86,27 +85,30 @@ public class userManagView extends JFrame {
 	 * Create the frame.
 	 */
 	public userManagView() {
+		initComponents();
 		this.model = new userManagModel();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLocationRelativeTo(null);
+		setUndecorated(true);
 		setBounds(100, 100, 774, 751);
-
+		setBackground(Color.black);
+		
 		Action action = new userManagController(this);
 
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
-
 		JMenu menuFile = new JMenu("File");
-		menuFile.setFont(new Font("Segoe UI", Font.PLAIN, 20));
+		menuFile.setFont(new java.awt.Font("sansserif", 1, 14));
 		menuBar.add(menuFile);
 
 		JMenuItem menuOpen = new JMenuItem("Open");
 		menuOpen.addActionListener(action);
-		menuOpen.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+		menuOpen.setFont(new java.awt.Font("sansserif", 1, 14));
 		menuFile.add(menuOpen);
 
 		JMenuItem menuSaveFile = new JMenuItem("SaveFile");
 		menuSaveFile.addActionListener(action);
-		menuSaveFile.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+		menuSaveFile.setFont(new java.awt.Font("sansserif", 1, 14));
 		menuFile.add(menuSaveFile);
 
 		JSeparator separator = new JSeparator();
@@ -114,19 +116,19 @@ public class userManagView extends JFrame {
 
 		JMenuItem menuExit = new JMenuItem("Exit");
 		menuExit.addActionListener(action);
-		menuExit.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+		menuExit.setFont(new java.awt.Font("sansserif", 1, 14));
 		menuFile.add(menuExit);
 
 		JMenu menuAbout = new JMenu("About");
 		menuAbout.addActionListener(action);
-		menuAbout.setFont(new Font("Segoe UI", Font.PLAIN, 20));
+		menuAbout.setFont(new java.awt.Font("sansserif", 1, 14));
 		menuBar.add(menuAbout);
 
 		JMenuItem menuAboutMe = new JMenuItem("About Me");
 		menuAboutMe.addActionListener(action);
-		menuAboutMe.setFont(new Font("Segoe UI", Font.PLAIN, 18));
+		menuAboutMe.setFont(new java.awt.Font("sansserif", 1, 14));
 		menuAbout.add(menuAboutMe);
-		contentPane = new JPanel();
+		contentPane = new Menu();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
@@ -136,26 +138,32 @@ public class userManagView extends JFrame {
 		contentPane.add(verticalBox_1);
 
 		JLabel label_homeTown = new JLabel("Home Town");
-		label_homeTown.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		label_homeTown.setFont(new java.awt.Font("sansserif", 1, 14));
 		label_homeTown.setBounds(10, 11, 102, 54);
 		contentPane.add(label_homeTown);
 
 		JLabel label_id_user = new JLabel("ID User");
-		label_id_user.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		label_id_user.setFont(new java.awt.Font("sansserif", 1, 14));
 		label_id_user.setBounds(300, 11, 155, 54);
 		contentPane.add(label_id_user);
 
 		textField_UserID_Search = new JTextField();
-		textField_UserID_Search.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		textField_UserID_Search.setFont(new java.awt.Font("sansserif", 1, 14));
 		textField_UserID_Search.setColumns(10);
-		textField_UserID_Search.setBounds(393, 12, 123, 54);
+		textField_UserID_Search.setBounds(363, 12, 100, 54);
 		contentPane.add(textField_UserID_Search);
 
 		JButton btnSearch = new JButton("Search");
 		btnSearch.addActionListener(action);
-		btnSearch.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		btnSearch.setBounds(526, 12, 89, 54);
+		btnSearch.setFont(new java.awt.Font("sansserif", 1, 14));
+		btnSearch.setBounds(490, 12, 100, 54);
 		contentPane.add(btnSearch);
+		
+		JButton btnHuyTim = new JButton("UnchFind");
+		btnHuyTim.addActionListener(action);
+		btnHuyTim.setFont(new java.awt.Font("sansserif", 1, 14));
+		btnHuyTim.setBounds(615, 12, 100, 54);
+		contentPane.add(btnHuyTim);
 
 		comboBox_HomeTown_Search = new JComboBox();
 		ArrayList<provinceModel> listProvince = provinceModel.getListProvince();
@@ -171,7 +179,7 @@ public class userManagView extends JFrame {
 		contentPane.add(separator_1);
 
 		JLabel label_homeTown_check = new JLabel("List User");
-		label_homeTown_check.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		label_homeTown_check.setFont(new java.awt.Font("sansserif", 1, 16));
 		label_homeTown_check.setBounds(10, 97, 251, 54);
 		contentPane.add(label_homeTown_check);
 
@@ -198,34 +206,34 @@ public class userManagView extends JFrame {
 		contentPane.add(separator_1_1);
 
 		JLabel label_HomeTown_1 = new JLabel("Information User");
-		label_HomeTown_1.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		label_HomeTown_1.setFont(new java.awt.Font("sansserif", 1, 14));
 		label_HomeTown_1.setBounds(10, 369, 233, 54);
 		contentPane.add(label_HomeTown_1);
 
 		JLabel label_ID = new JLabel("ID");
-		label_ID.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		label_ID.setFont(new java.awt.Font("sansserif", 1, 14));
 		label_ID.setBounds(10, 412, 102, 54);
 		contentPane.add(label_ID);
 
 		textField_ID = new JTextField();
-		textField_ID.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		textField_ID.setFont(new java.awt.Font("sansserif", 1, 14));
 		textField_ID.setColumns(10);
 		textField_ID.setBounds(127, 425, 166, 29);
 		contentPane.add(textField_ID);
 
 		JLabel label_HoVaTen = new JLabel("Full Name");
-		label_HoVaTen.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		label_HoVaTen.setFont(new java.awt.Font("sansserif", 1, 14));
 		label_HoVaTen.setBounds(10, 457, 102, 54);
 		contentPane.add(label_HoVaTen);
 
 		textField_FullName = new JTextField();
-		textField_FullName.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		textField_FullName.setFont(new java.awt.Font("sansserif", 1, 14));
 		textField_FullName.setColumns(10);
 		textField_FullName.setBounds(127, 470, 166, 29);
 		contentPane.add(textField_FullName);
 
 		JLabel label_FindByHomeTown = new JLabel("Home Town");
-		label_FindByHomeTown.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		label_FindByHomeTown.setFont(new java.awt.Font("sansserif", 1, 14));
 		label_FindByHomeTown.setBounds(10, 510, 102, 54);
 		contentPane.add(label_FindByHomeTown);
 
@@ -239,29 +247,29 @@ public class userManagView extends JFrame {
 		contentPane.add(comboBox_HomeTown);
 
 		JLabel label_NgaySinh = new JLabel("Day of birth");
-		label_NgaySinh.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		label_NgaySinh.setFont(new java.awt.Font("sansserif", 1, 14));
 		label_NgaySinh.setBounds(10, 563, 155, 54);
 		contentPane.add(label_NgaySinh);
 
 		textField_Bod = new JTextField();
-		textField_Bod.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		textField_Bod.setFont(new java.awt.Font("sansserif", 1, 14));
 		textField_Bod.setColumns(10);
 		textField_Bod.setBounds(127, 576, 166, 29);
 		contentPane.add(textField_Bod);
 
 		JLabel label_ID_1 = new JLabel("Gender");
-		label_ID_1.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		label_ID_1.setFont(new java.awt.Font("sansserif", 1, 14));
 		label_ID_1.setBounds(324, 412, 102, 54);
 		contentPane.add(label_ID_1);
 
 		radioButton_Male = new JRadioButton("Male");
-		radioButton_Male.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		radioButton_Male.setFont(new java.awt.Font("sansserif", 1, 14));
 		radioButton_Male.setBounds(405, 429, 61, 23);
 		contentPane.add(radioButton_Male);
 
 		radioButton_Female = new JRadioButton("Female");
-		radioButton_Female.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		radioButton_Female.setBounds(489, 429, 61, 23);
+		radioButton_Female.setFont(new java.awt.Font("sansserif", 1, 14));
+		radioButton_Female.setBounds(489, 429, 80, 23);
 		contentPane.add(radioButton_Female);
 
 		btn_Gender = new ButtonGroup();
@@ -269,65 +277,65 @@ public class userManagView extends JFrame {
 		btn_Gender.add(radioButton_Female);
 
 		JLabel label_Subject1 = new JLabel("Subject 1");
-		label_Subject1.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		label_Subject1.setFont(new java.awt.Font("sansserif", 1, 14));
 		label_Subject1.setBounds(324, 473, 102, 23);
 		contentPane.add(label_Subject1);
 
 		textField_Subject1 = new JTextField();
-		textField_Subject1.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		textField_Subject1.setFont(new java.awt.Font("sansserif", 1, 14));
 		textField_Subject1.setColumns(10);
-		textField_Subject1.setBounds(405, 470, 166, 29);
+		textField_Subject1.setBounds(405, 470, 168, 29);
 		contentPane.add(textField_Subject1);
 
 		JLabel label_Subject2 = new JLabel("Subject 2");
-		label_Subject2.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		label_Subject2.setFont(new java.awt.Font("sansserif", 1, 14));
 		label_Subject2.setBounds(324, 513, 102, 23);
 		contentPane.add(label_Subject2);
 
 		textField_Subject2 = new JTextField();
-		textField_Subject2.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		textField_Subject2.setFont(new java.awt.Font("sansserif", 1, 14));
 		textField_Subject2.setColumns(10);
 		textField_Subject2.setBounds(405, 510, 166, 29);
 		contentPane.add(textField_Subject2);
 
 		JLabel label_Subject3 = new JLabel("Subject 3");
-		label_Subject3.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		label_Subject3.setFont(new java.awt.Font("sansserif", 1, 14));
 		label_Subject3.setBounds(324, 557, 102, 23);
 		contentPane.add(label_Subject3);
 
 		textField_Subject3 = new JTextField();
-		textField_Subject3.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		textField_Subject3.setFont(new java.awt.Font("sansserif", 1, 14));
 		textField_Subject3.setColumns(10);
 		textField_Subject3.setBounds(405, 554, 166, 29);
 		contentPane.add(textField_Subject3);
 
 		JButton btnThem = new JButton("Add");
 		btnThem.addActionListener(action);
-		btnThem.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		btnThem.setFont(new java.awt.Font("sansserif", 1, 14));
 		btnThem.setBounds(31, 628, 89, 42);
 		contentPane.add(btnThem);
 
 		JButton btnXoa = new JButton("Delete");
 		btnXoa.addActionListener(action);
-		btnXoa.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		btnXoa.setFont(new java.awt.Font("sansserif", 1, 14));
 		btnXoa.setBounds(151, 628, 89, 42);
 		contentPane.add(btnXoa);
 
 		JButton btnCapNhat = new JButton("Update");
 		btnCapNhat.addActionListener(action);
-		btnCapNhat.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		btnCapNhat.setFont(new java.awt.Font("sansserif", 1, 14));
 		btnCapNhat.setBounds(264, 628, 135, 42);
 		contentPane.add(btnCapNhat);
 
 		JButton btnLuu = new JButton("Save");
 		btnLuu.addActionListener(action);
-		btnLuu.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		btnLuu.setFont(new java.awt.Font("sansserif", 1, 14));
 		btnLuu.setBounds(421, 628, 135, 42);
 		contentPane.add(btnLuu);
 
 		JButton btnHuyBo = new JButton("Unchecked");
 		btnHuyBo.addActionListener(action);
-		btnHuyBo.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		btnHuyBo.setFont(new java.awt.Font("sansserif", 1, 14));
 		btnHuyBo.setBounds(585, 628, 135, 42);
 		contentPane.add(btnHuyBo);
 
@@ -340,11 +348,6 @@ public class userManagView extends JFrame {
 		separator_1_1_1.setBounds(10, 616, 738, 2);
 		contentPane.add(separator_1_1_1);
 
-		JButton btnHuyTim = new JButton("Unchecked Find");
-		btnHuyTim.addActionListener(action);
-		btnHuyTim.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		btnHuyTim.setBounds(631, 11, 117, 54);
-		contentPane.add(btnHuyTim);
 
 		this.setVisible(true);
 	}
@@ -602,4 +605,17 @@ public class userManagView extends JFrame {
 			ResetDocument();
 		} 
 	}
+	public void initComponents() {
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 188, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 178, Short.MAX_VALUE)
+        );
+    }
 }
