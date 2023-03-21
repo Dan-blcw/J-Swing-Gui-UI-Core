@@ -6,7 +6,7 @@
 ![image](https://user-images.githubusercontent.com/127305381/226503635-8b832128-5f2e-496f-91eb-4e792d2f1e84.png)
 ## Prerequisites
 - JDK 19
-- able to type pure code with Java Swing GUI ()
+- Able to type pure code with Java Swing GUI ()
 #### NOTE : The code below is purely hand-typed, so it will be a lot of lines and will be very long
 ## Summary chart
 <!--  
@@ -28,7 +28,7 @@
 
 ## Function
 
-- add user, edit, delete, deselect, search
+- Add user, edit, delete, deselect, search
 
 - Open file, write data, save data
 
