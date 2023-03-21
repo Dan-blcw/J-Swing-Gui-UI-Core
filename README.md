@@ -6,7 +6,7 @@
 ![image](https://user-images.githubusercontent.com/127305381/226506907-7a0d37f3-0789-448d-ab5e-758708b0d189.png)
 ## Prerequisites
 - JDK 19
-- Able to type pure code with Java Swing GUI ()
+- Able to type pure code with Java Swing GUI (Core)
 #### NOTE : The code below is purely hand-typed, so it will be a lot of lines and will be very long
 ## Summary chart
 <!--  
