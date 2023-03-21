@@ -26,11 +26,11 @@
 ![image](https://user-images.githubusercontent.com/127305381/226505775-76f183d6-8994-425c-b384-3d992d0a47c6.png)
 
 
-## function
+## Function
 
 - add user, edit, delete, deselect, search
 
 - Open file, write data, save data
 
 
-Okay,that is all and i'm Dan
+#### Okay,that is all and i'm Dan
