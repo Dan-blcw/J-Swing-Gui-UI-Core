@@ -9,7 +9,7 @@
 - Able to type pure code with Java Swing GUI (Core)
 #### NOTE : The code below is purely hand-typed, so it will be a lot of lines and will be very long
 ## Summary chart
-<!--  
+```
                                              - src
                                                     - controller 
                                                                 - userManagController.java
@@ -22,10 +22,7 @@
                                                     - view
                                                                 - Menu.java
                                                                 - userManagView.java  
- -->
-![image](https://user-images.githubusercontent.com/127305381/226505775-76f183d6-8994-425c-b384-3d992d0a47c6.png)
-
-
+```
 ## Function
 
 - Add user, edit, update, save, delete, deselect, search
