@@ -10,18 +10,18 @@
 #### NOTE : The code below is purely hand-typed, so it will be a lot of lines and will be very long
 ## Summary chart
 ```
-                                             - src
-                                                    - controller 
-                                                                - userManagController.java
-                                                    - maintest
-                                                                - mainTest.java -> run
-                                                    - model
-                                                                - provinceModel.java
-                                                                - userManagModel.java
-                                                                - userModel.java
-                                                    - view
-                                                                - Menu.java
-                                                                - userManagView.java  
+- src
+      - controller
+                  - userManagController.java
+      - maintest
+                  - mainTest.java -> run
+      - model
+                  - provinceModel.java
+                  - userManagModel.java
+                  - userModel.java
+      - view
+                  - Menu.java
+                  - userManagView.java  
 ```
 ## Function
 
