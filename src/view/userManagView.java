@@ -49,7 +49,7 @@ import java.awt.Color;
 
 public class userManagView extends JFrame {
 	private static final long serialVersionUID = 1L;
-	private Menu contentPane;
+	private fixBackground contentPane;
 	public userManagModel model;
 	public JTextField textField_UserID_Search;
 	public JTable table;
@@ -128,7 +128,7 @@ public class userManagView extends JFrame {
 		menuAboutMe.addActionListener(action);
 		menuAboutMe.setFont(new java.awt.Font("sansserif", 1, 14));
 		menuAbout.add(menuAboutMe);
-		contentPane = new Menu();
+		contentPane = new fixBackground();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
