@@ -21,7 +21,7 @@
                   - userManagModel.java
                   - userModel.java
       - view
-                  - Menu.java
+                  - fixBackground.java
                   - userManagView.java  
 ```
 ## Function
