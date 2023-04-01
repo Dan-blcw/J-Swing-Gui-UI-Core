@@ -6,9 +6,9 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 
-public class Menu extends javax.swing.JPanel {
+public class fixBackground extends javax.swing.JPanel {
 
-    public Menu() {
+    public fixBackground() {
         initComponents();
         setOpaque(false);
     }
