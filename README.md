@@ -4,6 +4,7 @@
 - if you're interested, read it,here is a test of me with Java Swing GUI programming to understand the core
 ## Swing GUI
 ![image](https://user-images.githubusercontent.com/127305381/229291445-21d2191d-c6ca-4a20-b354-1f93942dab00.png)
+![image](https://user-images.githubusercontent.com/127305381/229333379-b3d7ad62-503e-4c83-8943-4d6d2d34859b.png)
 
 ## Prerequisites
 - JDK 19
