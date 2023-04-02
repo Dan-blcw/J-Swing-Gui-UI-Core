@@ -3,12 +3,7 @@
 ## Here's a product I've put a lot of effort into, though it's pretty simple,
 - if you're interested, read it,here is a test of me with Java Swing GUI programming to understand the core
 ## Swing GUI
-![image](https://user-images.githubusercontent.com/127305381/229291445-21d2191d-c6ca-4a20-b354-1f93942dab00.png)
-![image](https://user-images.githubusercontent.com/127305381/229333379-b3d7ad62-503e-4c83-8943-4d6d2d34859b.png)
-![image](https://user-images.githubusercontent.com/127305381/229333442-2a29f25f-edcb-4a06-97f0-4fde591a11be.png)
 ![image](https://user-images.githubusercontent.com/127305381/229333520-c5055d6d-e289-4415-a9e9-aaa3c715f365.png)
-
-
 ## Prerequisites
 - JDK 19
 - Able to type pure code with Java Swing GUI (Core)
