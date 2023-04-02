@@ -179,12 +179,12 @@ public class userManagView extends JFrame {
 		contentPane.add(separator_1);
 
 		JLabel label_homeTown_check = new JLabel("List User");
-		label_homeTown_check.setFont(new java.awt.Font("sansserif", 1, 16));
+		label_homeTown_check.setFont(new java.awt.Font("sansserif", 1, 18));
 		label_homeTown_check.setBounds(10, 97, 251, 54);
 		contentPane.add(label_homeTown_check);
 
 		table = new JTable();
-		table.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		table.setFont(new java.awt.Font("sansserif", 2, 13));
 		table.setModel(new DefaultTableModel(new Object[][] {},
 				new String[] { "ID", 
 						"Full Name",
