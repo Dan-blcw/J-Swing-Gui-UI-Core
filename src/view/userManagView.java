@@ -144,25 +144,25 @@ public class userManagView extends JFrame {
 
 		JLabel label_id_user = new JLabel("ID User");
 		label_id_user.setFont(new java.awt.Font("sansserif", 1, 14));
-		label_id_user.setBounds(300, 11, 155, 54);
+		label_id_user.setBounds(256, 11, 155, 54);
 		contentPane.add(label_id_user);
 
 		textField_UserID_Search = new JTextField();
 		textField_UserID_Search.setFont(new java.awt.Font("sansserif", 1, 14));
 		textField_UserID_Search.setColumns(10);
-		textField_UserID_Search.setBounds(363, 12, 100, 54);
+		textField_UserID_Search.setBounds(316, 24, 100, 36);
 		contentPane.add(textField_UserID_Search);
 
 		JButton btnSearch = new JButton("Search");
 		btnSearch.addActionListener(action);
 		btnSearch.setFont(new java.awt.Font("sansserif", 1, 14));
-		btnSearch.setBounds(490, 12, 100, 54);
+		btnSearch.setBounds(448, 24, 100, 36);
 		contentPane.add(btnSearch);
 		
 		JButton btnHuyTim = new JButton("UnchFind");
 		btnHuyTim.addActionListener(action);
 		btnHuyTim.setFont(new java.awt.Font("sansserif", 1, 14));
-		btnHuyTim.setBounds(615, 12, 100, 54);
+		btnHuyTim.setBounds(590, 24, 100, 36);
 		contentPane.add(btnHuyTim);
 
 		comboBox_HomeTown_Search = new JComboBox();
@@ -171,7 +171,7 @@ public class userManagView extends JFrame {
 		for (provinceModel flag : listProvince) {
 			comboBox_HomeTown_Search.addItem(flag.getprovincedName());
 		}
-		comboBox_HomeTown_Search.setBounds(120, 11, 155, 54);
+		comboBox_HomeTown_Search.setBounds(120, 24, 128, 36);
 		contentPane.add(comboBox_HomeTown_Search);
 
 		JSeparator separator_1 = new JSeparator();
@@ -229,7 +229,7 @@ public class userManagView extends JFrame {
 		textField_FullName = new JTextField();
 		textField_FullName.setFont(new java.awt.Font("sansserif", 1, 14));
 		textField_FullName.setColumns(10);
-		textField_FullName.setBounds(127, 470, 166, 29);
+		textField_FullName.setBounds(127, 475, 166, 29);
 		contentPane.add(textField_FullName);
 
 		JLabel label_FindByHomeTown = new JLabel("Home Town");
@@ -243,7 +243,7 @@ public class userManagView extends JFrame {
 			comboBox_HomeTown.addItem(tinh.getprovincedName());
 		}
 
-		comboBox_HomeTown.setBounds(127, 522, 166, 35);
+		comboBox_HomeTown.setBounds(127, 522, 166, 29);
 		contentPane.add(comboBox_HomeTown);
 
 		JLabel label_NgaySinh = new JLabel("Day of birth");
@@ -269,54 +269,56 @@ public class userManagView extends JFrame {
 
 		radioButton_Female = new JRadioButton("Female");
 		radioButton_Female.setFont(new java.awt.Font("sansserif", 1, 14));
-		radioButton_Female.setBounds(489, 429, 80, 23);
+		radioButton_Female.setBounds(489, 429, 84, 23);
 		contentPane.add(radioButton_Female);
 
 		btn_Gender = new ButtonGroup();
 		btn_Gender.add(radioButton_Male);
 		btn_Gender.add(radioButton_Female);
 
-		JLabel label_Subject1 = new JLabel("Subject 1");
+		JLabel label_Subject1 = new JLabel("Score 1");
 		label_Subject1.setFont(new java.awt.Font("sansserif", 1, 14));
-		label_Subject1.setBounds(324, 473, 102, 23);
+		label_Subject1.setBounds(324,  457, 102, 54);
 		contentPane.add(label_Subject1);
 
 		textField_Subject1 = new JTextField();
 		textField_Subject1.setFont(new java.awt.Font("sansserif", 1, 14));
 		textField_Subject1.setColumns(10);
-		textField_Subject1.setBounds(405, 470, 168, 29);
+		textField_Subject1.setBounds(405, 475, 168, 29);
 		contentPane.add(textField_Subject1);
 
-		JLabel label_Subject2 = new JLabel("Subject 2");
+		JLabel label_Subject2 = new JLabel("Score 2");
 		label_Subject2.setFont(new java.awt.Font("sansserif", 1, 14));
-		label_Subject2.setBounds(324, 513, 102, 23);
+		label_Subject2.setBounds(324, 510, 102, 54);
 		contentPane.add(label_Subject2);
 
 		textField_Subject2 = new JTextField();
 		textField_Subject2.setFont(new java.awt.Font("sansserif", 1, 14));
 		textField_Subject2.setColumns(10);
-		textField_Subject2.setBounds(405, 510, 166, 29);
+		textField_Subject2.setBounds(405, 522, 166, 29);
 		contentPane.add(textField_Subject2);
 
-		JLabel label_Subject3 = new JLabel("Subject 3");
+		JLabel label_Subject3 = new JLabel("Score 3");
 		label_Subject3.setFont(new java.awt.Font("sansserif", 1, 14));
-		label_Subject3.setBounds(324, 557, 102, 23);
+		label_Subject3.setBounds(324, 563, 155, 54);
 		contentPane.add(label_Subject3);
 
 		textField_Subject3 = new JTextField();
 		textField_Subject3.setFont(new java.awt.Font("sansserif", 1, 14));
 		textField_Subject3.setColumns(10);
-		textField_Subject3.setBounds(405, 554, 166, 29);
+		textField_Subject3.setBounds(405, 576, 166, 29);
 		contentPane.add(textField_Subject3);
 
 		JButton btnThem = new JButton("Add");
 		btnThem.addActionListener(action);
 		btnThem.setFont(new java.awt.Font("sansserif", 1, 14));
+		btnThem.setBackground(Color.black);
 		btnThem.setBounds(31, 628, 89, 42);
 		contentPane.add(btnThem);
 
 		JButton btnXoa = new JButton("Delete");
 		btnXoa.addActionListener(action);
+		btnXoa.setBackground(Color.black);
 		btnXoa.setFont(new java.awt.Font("sansserif", 1, 14));
 		btnXoa.setBounds(151, 628, 89, 42);
 		contentPane.add(btnXoa);
@@ -325,18 +327,21 @@ public class userManagView extends JFrame {
 		btnCapNhat.addActionListener(action);
 		btnCapNhat.setFont(new java.awt.Font("sansserif", 1, 14));
 		btnCapNhat.setBounds(264, 628, 135, 42);
+		btnCapNhat.setBackground(Color.black);
 		contentPane.add(btnCapNhat);
 
 		JButton btnLuu = new JButton("Save");
 		btnLuu.addActionListener(action);
 		btnLuu.setFont(new java.awt.Font("sansserif", 1, 14));
 		btnLuu.setBounds(421, 628, 135, 42);
+		btnLuu.setBackground(Color.black);
 		contentPane.add(btnLuu);
 
 		JButton btnHuyBo = new JButton("Unchecked");
 		btnHuyBo.addActionListener(action);
 		btnHuyBo.setFont(new java.awt.Font("sansserif", 1, 14));
 		btnHuyBo.setBounds(585, 628, 135, 42);
+		btnHuyBo.setBackground(Color.black);
 		contentPane.add(btnHuyBo);
 
 		JSeparator separator_2 = new JSeparator();
@@ -370,7 +375,7 @@ public class userManagView extends JFrame {
 				ts.getUserName(),
 				ts.getHomeTown().getprovincedName(),
 				ts.getBod().getDate() + "/" + (ts.getBod().getMonth() + 1) + "/"+ (ts.getBod().getYear() + 1900),
-				(ts.isGender() ? "Nam" : "Nữ"),
+				(ts.isGender() ? "Male" : "Female"),
 				ts.getScores0() + "", 
 				ts.getScores1() + "",
 				ts.getScores2() + "", });
@@ -393,7 +398,7 @@ public class userManagView extends JFrame {
 					model_table.setValueAt(ts.getBod().getDate() + "/" + 
 							(ts.getBod().getMonth() + 1) + "/"
 							+ (ts.getBod().getYear() + 1900) + "", i, 3);
-					model_table.setValueAt((ts.isGender() ? "Nam" : "Nữ"), i, 4);
+					model_table.setValueAt((ts.isGender() ? "Male" : "Female"), i, 4);
 					model_table.setValueAt(ts.getScores0() + "", i, 5);
 					model_table.setValueAt(ts.getScores1() + "", i, 6);
 					model_table.setValueAt(ts.getScores2() + "", i, 7);
@@ -525,8 +530,8 @@ public class userManagView extends JFrame {
 	public void ResetDocument() {
 		while (true) {
 			DefaultTableModel model_table = (DefaultTableModel) table.getModel();
-			int soLuongDong = model_table.getRowCount();
-			if(soLuongDong==0)
+			int nRow = model_table.getRowCount();
+			if(nRow==0)
 				break;
 			else
 				try {
@@ -541,7 +546,7 @@ public class userManagView extends JFrame {
 	}
 
 	public void appearAbout() {
-		JOptionPane.showMessageDialog(this, "User Management Software 1.0!");
+		JOptionPane.showMessageDialog(this, "What'up, this is User Management Software 1.0!");
 	}
 
 	public void exitProgram() {
