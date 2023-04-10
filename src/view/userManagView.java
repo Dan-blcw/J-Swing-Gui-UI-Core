@@ -546,7 +546,7 @@ public class userManagView extends JFrame {
 	}
 
 	public void appearAbout() {
-		JOptionPane.showMessageDialog(this, "What'up, this is User Management Software 1.0!");
+		JOptionPane.showMessageDialog(this, "What's up, I'm Dan this is User Management Software 1.0!");
 	}
 
 	public void exitProgram() {
