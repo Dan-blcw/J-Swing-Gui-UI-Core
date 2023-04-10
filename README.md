@@ -21,7 +21,6 @@
 ![image](https://user-images.githubusercontent.com/127305381/230968024-d5102627-0840-4562-b595-8cfe54d5a8cb.png)
 #### Display screen window
 ![image](https://user-images.githubusercontent.com/127305381/230968472-3c2d1b16-d127-4e03-a887-2ff76e9db22a.png)
-![image](https://user-images.githubusercontent.com/127305381/230968623-4f6b4cd9-9c80-42d2-b9a5-322041e5d9db.png)
 ![image](https://user-images.githubusercontent.com/127305381/230971454-89e26a31-d2b4-4e2a-b6dc-c66c584b05cc.png)
 
 #### SaveFile & OpenFile
